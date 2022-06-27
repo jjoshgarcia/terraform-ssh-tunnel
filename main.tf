@@ -24,7 +24,7 @@ data external ssh_tunnel {
     timeout = var.timeout,
     ssh_cmd = var.ssh_cmd,
     local_host = var.local_host,
-    local_port = data.external.free_port.result.port,
+    local_port = var.local_port,
     target_host = var.target_host,
     target_port = var.target_port,
     gateway_host = local.gw,
