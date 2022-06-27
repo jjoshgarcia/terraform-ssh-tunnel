@@ -28,6 +28,11 @@ variable "local_host" {
   description = "Local host name or IP. Set only if you cannot use the '127.0.0.1' default value. This string will be returned as-is in the 'host' output"
   default="127.0.0.1"
 }
+variable "local_port" {
+  type = number
+  description = "Local port"
+  default="9096"
+}
 
 variable "target_host" {
   type = string
